@@ -1,0 +1,726 @@
+/*
+
+
+
+COLORS:
+
+GOLD - rgba(243,193,58,0.8);
+
+White - rgba(242,241,239,0.8);
+
+black - rgba(44, 62, 80,0.6);
+
+
+*/
+
+.headertext1{
+    
+    font-size: 200%;
+    color: rgba(44, 62, 80,1);
+}
+.headertext3{
+    font-size: 120%;
+    color: rgba(44, 62, 80,0.8);
+} 
+.simpletext1{
+    font-size: 100%;
+    color: rgba(44, 62, 80,0.7);
+}
+.suporttext1{
+    font-size: 90%;
+    color: rgba(44, 62, 80,0.6);
+}
+.suporttext2{
+    font-size: 70%;
+    color: rgba(44, 62, 80,0.5);
+}
+
+body{
+    padding: 0px 0px;
+    margin: 0px 0px;
+    font-family: Helvetica Neue, Arial;
+    min-width: 1150px;
+    min-height: 800px;
+    background: rgba(238, 238, 240, 1);
+}
+
+
+
+
+#Backgr{
+    position: fixed;
+    z-index: -10;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    opacity: 0.0;
+    background-repeat: no-repeat;
+    
+    
+    /*
+    -webkit-filter: blur(21px);
+    -moz-filter: blur(21px);
+    -o-filter: blur(21px);
+    -ms-filter: blur(21px);
+    filter: blur(21px);
+    */
+    
+
+    
+}
+
+#WhiteL{
+    position: fixed;
+    z-index: 2121;
+    height: 100%;
+    width: 100%;
+    background: rgba(254,255,255,0.8);
+
+
+
+}
+
+
+#updateWindow{
+                     position: fixed;
+                     z-index:111111111111111;
+                     margin-left: 85%;
+                     margin-top: 5%;
+                     padding: 10px 10px;
+                     background: rgba(242,241,239,0.6);
+                     color: rgba(44, 62, 80,0.8);
+                     border-style: solid;
+                     border-width: 1px;
+                     border-color: rgba(44, 62, 80,0.8);
+                    border-radius: 10px;
+                 
+                 }
+
+            .title {
+                
+                font-size: 30px;
+                font-weight: 600;
+                font-family: 'Josefin Sans', sans-serif;
+                color:  rgba(242,241,239,0.9);
+            }
+.title:hover {
+                color:  rgba(242,241,239,1);
+            }
+
+#CenterSection{
+    display: inline-block;
+    align-items: center;
+    text-align: center;
+    margin-top: 40px;
+    margin-left: 105px;
+    height: 100%;
+    width: 64%;
+    position: relative;
+    float: left;
+}
+
+#RightSection{
+    margin-top: 40px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgba(44, 62, 80,0.0);
+    border-left-color: rgba(44, 62, 80,0.0);
+    width: 300px;
+    height: 100%;
+    position: relative;
+    float: right;
+    width: 25%;
+    align-items: flex-start;
+    text-align: left;
+    padding-left: 0px;
+    padding-right: 8px;
+    margin-right: 10px;
+}
+
+#MainHeader{
+    position: fixed;
+    z-index: 111;
+    width: 100%;
+    background: rgba(65, 131, 215,0.8);
+    /*background: rgba(242,241,239,0.5);*/
+    vertical-align:middle;
+    padding: 0px;
+    margin: 0px;
+     
+    padding-top: 3px;
+}
+
+#MainMenu{
+    background: rgba(65, 131, 215,0.8);
+    margin-top: 54px;
+    float: left;
+    height: 100%;
+    position: fixed;
+    width: 100px;
+    align-items: center;
+    text-align: center;
+    z-index: 11;
+    color: rgba(242,241,239,0.8);
+}
+
+#Footer{
+    line-height: 40%;
+    background: rgba(149, 165, 166,0.7);
+    margin-left: -5px;
+    height: 68px;
+    width: 143%;
+    padding: 5px;
+    margin-top: 200px;
+    color:  rgba(242,241,239,0.8);
+    text-align: center;
+    
+}
+
+.IcButton{
+    color:  rgba(108, 122, 137,0.9);
+    text-decoration: none;
+    -webkit-transition:0.2s;
+                 -moz-transition:0.2s;
+                 -o-transition:0.2s;
+                 transition:0.2s;
+}
+.IcButton:hover{
+    color:  rgba(65, 131, 215,1);
+}
+
+.IcButtonWhite{
+    color:  rgba(242,241,239,0.6);
+    text-decoration: none;
+    -webkit-transition:0.2s;
+                 -moz-transition:0.2s;
+                 -o-transition:0.2s;
+                 transition:0.2s;
+}
+.IcButtonWhite:hover{
+    color:  rgba(242,241,239,0.9);
+}
+
+
+.IcButton3{
+            
+            color: rgba(231, 76, 70,0.9);
+            -webkit-transition:0.1s;
+            -moz-transition:0.1s;
+            -o-transition:0.1s;
+            transition:0.1s;
+        }
+        .IcButton3:hover{
+            color: rgba(261, 106, 100,1.0);
+        }
+
+a{
+    color: rgba(88,88,88, 0.6);
+    text-decoration:none;
+    -webkit-transition:0.2s;
+    -moz-transition:0.2s;
+    -o-transition:0.2s;
+    transition:0.2s;
+}
+a:hover{
+    color: rgba(88,88,88, 1);
+    text-decoration:none;
+}
+
+            input {
+               border: 1px solid rgba(151,151,151, 0.9); 
+               -webkit-box-shadow: 
+                   inset 0 0 8px  rgba(0,0,0,0.1),
+                   0 0 16px rgba(0,0,0,0.1); 
+                -moz-box-shadow: 
+                        inset 0 0 8px  rgba(0,0,0,0.1),
+                        0 0 16px rgba(0,0,0,0.1); 
+                box-shadow: 
+                    inset 0 0 8px  rgba(0,0,0,0.1),
+                    0 0 16px rgba(0,0,0,0.1); 
+                padding: 8px 8px;
+                background: rgba(255,255,255,0.9);
+                min-width: 288px;
+                font-size: 110%;
+                margin: 0px 5px;
+                border-radius: 8px;
+                color: rgba(88,88,88, 0.8);
+            }
+            button {
+                border-radius: 8px;
+                font-weight: bold;
+                font-size: 150%;
+                text-transform: uppercase;
+            }
+             button {
+                 color: rgba(228,228,228, 0.8);
+                 padding: 5px 5px;
+                 font-size: 90%;
+                 margin: 5px 5px;
+                 background: rgba(88,88,88, 0.8);
+                 border-radius: 8px;
+                 border-style:solid;
+                 border-color: rgba(88,88,88, 0.0);
+                 text-transform: uppercase;
+                 -webkit-transition:0.2s;
+                 -moz-transition:0.2s;
+                 -o-transition:0.2s;
+                 transition:0.2s;
+            }
+            button:hover {
+                background: rgba(38,38,38, 0.9);
+                padding: 5px 6px;
+                color: rgba(288,288,288, 1);
+                border-radius: 7px;
+            }
+            a.basic{
+                padding: 3px 3px;
+              color: rgba(288,288,288, 0.8);
+                text-decoration:none;
+                -webkit-transition:0.2s;
+                 -moz-transition:0.2s;
+                 -o-transition:0.2s;
+                 transition:0.2s;
+            }
+            a.basic:hover{
+                background-color: rgba(1,1,1, 0.2);
+                border-radius: 5px;
+              color: rgba(288,288,288, 1);
+                text-decoration:none;
+            }
+
+
+
+/*////////////////////////----------------Menu Buttons-------------------*/
+
+.MenuBut{
+    
+    padding: 8px 2px;
+    margin: 0px 0px;
+    
+    -webkit-transition:0.2s;
+    -moz-transition:0.2s;
+    -o-transition:0.2s;
+    transition:0.2s;
+}
+.MenuBut:hover{
+    -webkit-filter: brightness(1.1);
+    margin-right: -10px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+.MenuBut b{
+    font-weight: 400;
+    font-size: 0px;
+    color: rgba(255, 255, 255, 0.1);
+    padding: 0px 0px;
+    -webkit-transition:0.2s;
+    -moz-transition:0.2s;
+    -o-transition:0.2s;
+    transition:0.2s;
+}
+
+.MenuBut:hover > b{
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+
+.MenuButIcon {
+    width: 40px;
+    align-self: center;
+    display: inline-block;
+    -webkit-filter: grayscale(100%) brightness(5) invert(100%);
+    filter: grayscale(100%) brightness(5) invert(100%);
+    opacity: 0.9;
+     -webkit-transition:0.2s;
+    -moz-transition:0.2s;
+    -o-transition:0.2s;
+    transition:0.2s;
+}
+
+.MenuBut:hover > a img.MenuButIcon{
+    opacity: 1;
+}
+
+/*////////////////////////----------------Basic Template-------------------*/
+
+.PageTitle{
+    
+    text-align: left;
+    margin-left: 20px;
+    font-size: 200%;
+    color: rgba(44, 62, 80,1);
+}
+
+
+.BasicDiv{
+    position: relative;
+    padding: 5px 0px;
+    width: 98%;
+    align-items: baseline;
+    text-align: left;
+    /*  align-items: center; text-align: center;   */
+    
+    background-color: rgba(250,255,252,0.6);
+    border-radius: 10px;
+    margin: 10px 10px;
+    height: auto;
+    box-shadow: 2px 2px rgba(65, 131, 215,0.3);
+    
+    
+}
+.BasicDiv p{
+    padding: 1px 8px;
+}
+
+#AllPosts{
+    overflow-y: scroll;
+    
+}
+
+.basicDivider{
+    border: rgba(44, 62, 80,0.6);
+  width: 90%;
+    color: rgba(44, 62, 80,0.6);
+background-color: rgba(44, 62, 80,0.6);
+height: 1px;
+    margin:15px 30px;
+}
+
+.basicDividerlight{
+    border: rgba(58, 83, 155,0.9);
+  width: 100%;
+    color: rgba(58, 83, 155,0.6);
+background-color: rgba(58, 83, 155,0.2);
+height: 1px;
+}
+#SimplePost{
+    display: inline-block;
+    background-size: cover;
+    background-position: center;
+    width: 150px;
+    
+    padding-top: 110px;
+    margin: 5px;
+    border-width: 8px;
+    border-style: solid;
+    border-color: white;
+    box-shadow: 2px 2px 0px rgba(44, 62, 80,0.4);
+    
+    opacity: 1;
+    -webkit-transition:0.1s;
+    -moz-transition:0.1s;
+    -o-transition:0.1s;
+    transition:0.1s;
+    /**/
+    color: rgba(255,255,255,1);
+    overflow: hidden;
+}
+
+#SimplePost p{
+    padding: 3px 6px;
+    margin: 0px;
+    text-align: left;
+    vertical-align: bottom;
+    color: rgba(44, 62, 80,0.0);
+    font-size: 15px;
+    font-weight: 300;
+    -webkit-transition:0.1s;
+    -moz-transition:0.1s;
+    -o-transition:0.1s;
+    transition:0.1s;
+}
+
+#SimplePost:hover {
+    -webkit-filter: brightness(1.05);
+     
+}
+
+
+#SimplePost:hover > p{
+    color: rgba(44, 62, 80,0.9);
+    background-color: rgba(255, 255, 255,0.8);
+}
+
+.infoplace{
+    padding: 10px;
+    color: rgba(44, 62, 80,0.6);
+    line-height: 50%;
+    
+}
+
+.Tag{
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-transition:0.4s;
+    -moz-transition:0.4s;
+    -o-transition:0.4s;
+    transition:0.4s;
+    background-color: rgba(122,121,119,0.9);
+    color: rgba(242,241,239,1);
+    font-size: 80%;
+    padding: 3px 6px;
+    margin-left: 5px;
+    
+}
+
+.Tag:hover{
+    background-color: rgba(52, 152, 219, 0.9);
+    color: white;
+    padding: 4px 7px;
+}
+
+
+/*////////////////////////----------------WAIFU CARD-------------------*/
+
+
+
+
+.WaifuCardM{
+    align-items: center;
+    text-align: center;
+    background-color: rgba(238, 238, 240,0.6);
+    margin: 10px 10px;
+    height: auto;
+    box-shadow: 2px 2px rgba(65, 131, 215,0.2);
+    height: 175px;
+    width: 100px;
+    padding: 0px 0px;
+    border-radius: 3px;
+    overflow: hidden;
+    display: inline-block;
+    
+}
+.WaifuCardM p{
+    padding: 0px 0px;
+    margin: 0px 0px;
+}
+.WaifuCardS{
+    display: inline-block;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(238, 238, 240,0.5);
+    margin: 10px 10px;
+    height: auto;
+    box-shadow: 2px 2px rgba(65, 131, 215,0.2);
+    height: 110px;
+    width: 70px;
+    padding: 0px 0px;
+    border-radius: 3px;
+    overflow: hidden;
+   
+}
+.WaifuCardS p{
+    padding: 0px 0px;
+    margin: 0px 0px;
+}
+
+
+.ui-autocomplete{
+ z-index: 446464647474;   
+}
+.ui-autocomplete-input{
+ z-index: 446464647474;   
+}
+ul.ui-autocomplete.ui-menu {
+  z-index: 100000000000;
+}
+
+/*////////////////////////----------------USER CARD-------------------*/
+
+.usercardSmall{
+    align-items: center;
+    text-align: center;
+    margin: 5px 5px;
+    height: auto;
+    height: 100px;
+    width: auto;
+    padding: 3px 3px;
+    border-radius: 3px;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.usercardSmall p{
+    padding: 0px;
+    margin: 5px;
+    font-size: 80%;
+    color: rgba(44, 62, 80,0.7);
+    
+}
+
+.usercardSmall p img{
+    -webkit-clip-path: circle(30px at center);
+    clip-path: circle(30px at center);
+}
+
+.usercardMed{
+    align-items: center;
+    text-align: center;
+    height: auto;
+    width: auto;
+    padding: 5px 5px;
+    border-radius: 3px;
+    overflow: hidden;
+    display: inline-block;
+    background-color: rgba(238, 238, 240,0.6);
+    margin: 10px 10px;
+    box-shadow: 2px 2px rgba(65, 131, 215,0.2);
+    border-radius: 3px;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.usercardMed p{
+    padding: 0px;
+    margin: 5px;
+    font-size: 100%;
+    color: rgba(44, 62, 80,0.8);
+    
+}
+
+.usercardMed p img{
+    -webkit-clip-path: circle(40px at center);
+    clip-path: circle(40px at center);
+}
+
+
+
+/*//////////////////////---------------WAIFU PAGE------------------------*/
+
+.WaifuActionlist {
+    padding: 5px 5px;
+    display: inline;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    
+    
+}
+.WaifuActionlist ul li{
+    padding: 5px 6px;
+    display: inline;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 90%;
+    -moz-transition:0.2s;
+    -o-transition:0.2s;
+    transition:0.2s;
+}
+
+
+.WCircleIcon{
+    padding: 5px 6px;
+   color: rgba(255,225,100,1);
+    -moz-transition:0.1s;
+    -o-transition:0.1s;
+    transition:0.1s;
+}
+.WCircleIcon:hover {
+   color: rgba(213,163,58,0.9);
+}
+
+
+.WHeartIcon {
+    padding: 5px 6px;
+   color: rgba(245, 100, 140, 1);
+    -moz-transition:0.1s;
+    -o-transition:0.1s;
+    transition:0.1s;
+}
+.WHeartIcon:hover {
+   color: rgba(250, 130, 170, 1);
+}
+
+.WOkayIcon{
+    padding: 5px 6px;
+   color: rgba(100, 200, 160, 1);
+    -moz-transition:0.1s;
+    -o-transition:0.1s;
+    transition:0.1s;
+}
+.WOkayIcon:hover {
+   color: rgba(50, 150, 100, 0.7);
+}
+
+
+.WNoIcon {
+    padding: 5px 6px;
+   color: rgba(200, 100, 100, 1);
+    -moz-transition:0.1s;
+    -o-transition:0.1s;
+    transition:0.1s;
+}
+.WNoIcon:hover {
+   color: rgba(150, 10, 20, 1);
+}
+
+
+
+        .IcButtonW{
+            padding: 5px 6px;
+            color: rgba(44, 62, 80,0.6);
+            -webkit-transition:0.1s;
+            -moz-transition:0.1s;
+            -o-transition:0.1s;
+            transition:0.1s;
+        }
+        .IcButtonW:hover{
+            color: rgba(44, 62, 80,0.9);
+        }
+
+
+#myChart{
+ z-index: 1234567;   
+    
+}
+
+
+/*//////////////////////---------------ALERTWINDOW------------------------*/
+
+
+.newWindow{
+    position: fixed;
+    z-index: 3333333;
+    padding: 5px 0px;
+    width: 400px;
+    
+    /* Center Positioning*/
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 40%;
+    height: 30%;
+    margin: auto;
+    
+    background-color: rgba(252,251,249,0.9);
+    border-radius: 10px;
+    min-height: 200px;
+    box-shadow: 0px 0px 10px rgba(44, 62, 80,0.15);
+    line-height: 60%;
+    display: table-cell;
+    vertical-align: middle;
+}
+.newWindow p{
+    margin: 6px;
+    align-items: center;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

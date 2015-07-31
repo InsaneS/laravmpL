@@ -1,0 +1,1016 @@
+/*
+
+
+
+COLORS:
+
+GOLD - rgba(243,193,58,0.8);
+
+White - rgba(242,241,239,0.8);
+
+black - rgba(44, 62, 80,0.6);
+
+
+*/
+
+
+
+
+
+
+*{
+ margin: 0;
+    padding: 0;
+}
+
+a.button{
+    padding: 2px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgba(200,200,200,0.5);
+    margin: 3px 3px;
+}
+
+.newDiv{
+    background-color: rgba(205,205,215,0.5);
+    border-color: rgba(105,105,115,0.8);
+    color: rgba(105,105,115,0.8);
+    padding: 5px 5px;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.usericon:after{
+    opacity: 0.5;
+}
+
+.ui-autocomplete{
+    background-color: rgba(255,255,255,0.7);
+    width:55px;
+    z-index: 1222222;
+    list-style-type:none;
+    text-decoration: none;
+    padding: 2px 2px;
+}
+.ui-menu-item{
+    padding: 2px 2px;
+}
+.ui-menu-item:hover{
+    background-color: rgba(155,155,155,0.7);
+    color: rgba(255,255,255,1);
+}
+
+
+.blurred {
+    
+    z-index: -111111111;
+    /*
+    -webkit-filter: sepia(100%);
+    -webkit-filter: grayscale(50%);
+  -webkit-filter: blur(2px);
+     -webkit-transition:0.5s;
+    -moz-transition:0.5s;
+    -o-transition:0.5s;
+    transition:0.5s;
+    */
+    
+}
+.unblurred {
+    z-index: 111111111;
+    /*
+    -webkit-filter: sepia(0%);
+    -webkit-filter: grayscale(0%);
+  -webkit-filter: blur(0px);
+     -webkit-transition:1s;
+    -moz-transition:1s;
+    -o-transition:1s;
+    transition:1s;
+    */
+    
+}
+
+
+#WhiteBackground{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    margin-top: auto;
+}
+#BlackBackground{
+    z-index: -11111;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    margin-top: auto;
+    background-color: rgba(5,5,5,0.5);
+}
+
+#AddWaifuForm{
+    background-color: rgba(236, 240, 241,0.8);
+    position: relative;
+    height: auto;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 111px;
+    padding: 20px 30px;
+    color: rgba(65,65,65,0.9); 
+    
+}
+#AddWaifuForm header{
+     text-align: center;
+    color: rgba(55,55,55,0.9); 
+}
+
+
+    .Hidden {
+    position: fixed;
+    -webkit-filter: opacity(100%);
+    background-color: rgba(155,155,155,0.9);
+        -webkit-transition:1s;
+    z-index: -1222111;
+        display: none;
+}
+
+.Active {
+    position: fixed;
+    -webkit-filter: opacity(100%);
+    -webkit-transition:0.5s;
+    z-index: 1111;
+    display: block;
+}
+
+    
+
+
+#menu{
+    position: fixed;
+    z-index: 39099772;
+    height: 50px;
+    background-color: rgba(242,241,239,0.9);
+    width: 100%;
+    padding: 0px 0px;
+    min-width: 900px;
+    margin-top: auto
+}
+#menu nav.MainActions{
+        margin-left: 10%;
+}
+#menu nav.MainActions ul li{
+    display: inline;
+    float: left;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    padding: 15px 20px;
+}
+
+/* -----------------------imageActions webkit
+.saturate {-webkit-filter: saturate(3);}
+.grayscale {-webkit-filter: grayscale(100%);}
+.contrast {-webkit-filter: contrast(160%);}
+.brightness {-webkit-filter: brightness(0.25);}
+.blur {-webkit-filter: blur(3px);}
+.invert {-webkit-filter: invert(100%);}
+.sepia {-webkit-filter: sepia(100%);}
+.huerotate {-webkit-filter: hue-rotate(180deg);}
+.rss.opacity {-webkit-filter: opacity(50%);}
+*/
+
+
+#menu nav.UserActions{
+    margin-right: 20px;
+    margin-top: auto;
+    
+}
+
+
+#menu nav.UserActions ul li{
+ display: inline;
+    float: right;  
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+     padding: 5px 10px;
+}
+
+
+#menu nav.UserActions a:link, .mainheader a:visited {
+    display: inline-grid;
+ -webkit-transition:0.2s;
+    -moz-transition:0.2s;
+    -o-transition:0.2s;
+    transition:0.2s;
+}
+
+#menu nav.UserActions a:hover {
+    color: rgba(242,241,239,0.8);
+    -webkit-filter: invert(100%);
+    opacity: 0.5;
+}
+
+
+#menu nav.MainActions a{
+    color: rgba(44, 62, 80,0.6);
+    display: inline-grid;
+    padding: 20px 50px;
+    outline-width: thin;
+    -webkit-transition:0.2s;
+    -moz-transition:0.2s;
+    -o-transition:0.2s;
+    transition:0.2s;
+}
+
+#menu nav.MainActions a:hover {
+    color: rgba(242,241,239,0.8);
+    background-color:  rgba(243,193,58,0.8);
+}
+
+
+
+
+.AddButton {
+    margin: 20px 20px;
+    display: inline-grid;
+ -webkit-transition:0.2s;
+    -moz-transition:0.2s;
+    -o-transition:0.2s;
+    transition:0.2s;
+}
+
+
+.AddButton:hover {
+    color: rgba(243,193,58,0.8);
+    -webkit-filter: invert(100%);
+    opacity: 0.5;
+    
+}
+
+body{
+    font-family: Helvetica Neue, Arial;
+    
+    background-repeat: repeat;
+    
+}
+
+#backImg{
+    z-index: -111;
+    
+    background-position: 50% 20%;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    position: fixed;
+    background-repeat: repeat;
+    -webkit-filter: blur(11px);
+    -moz-filter: blur(11px);
+    -o-filter: blur(11px);
+    -ms-filter: blur(11px);
+    filter: blur(11px);
+     -webkit-transition:0.2s;
+    -moz-transition:0.2s;
+    -o-transition:0.2s;
+    transition:0.2s;
+    
+}
+
+#darkness{
+    
+    z-index: -110;
+    position: fixed;
+    background-color: rgba(20,20,30, 0.1);
+    height: 111%;
+    width: 111%;
+}
+
+#PostAsset{
+    
+    background-color: rgba(230,230,230, 1);
+    margin: 10px 10px;
+    padding: 10px 10px;
+    
+    
+}
+
+
+a{
+    text-decoration: none;
+    color: #758fa3;
+}
+
+#header{
+    position:relative;
+    height: 500px;
+    width: 100%; 
+    color: #8b8db9;
+    min-width: 900px;
+}
+#header2{
+    position:relative;
+    height: 200px;
+    width: 100%; 
+    color: #8b8db9;
+    min-width: 900px;
+    padding: 20px 0px;
+}
+/*
+#Headerlogo{
+    position:relative;
+    margin-top: 100px;
+    margin-left: 100px;
+    float: left;
+    
+    
+}*/
+
+#HeaderLogo a.HeaderTitle{
+    color: #ffffff;
+    text-shadow: 0 0 10px rgba(22,22,55,0.35);
+    font-size: 200%;
+    float: right;
+    padding: 5px 0px;
+    margin-top: 10px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+#header img.HeaderImg{
+    -webkit-filter: blur(11px);
+    -moz-filter: blur(11px);
+    -o-filter: blur(11px);
+    -ms-filter: blur(11px);
+    filter: blur(11px);
+    
+}
+.headquote {
+    background-color: rgba(191,191,191, 0.5);
+    color: #ffffff;
+    opacity: 0.9;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #bdc3c7;
+    height: auto;
+    margin-top: 0px;
+    margin-left: 0px;
+    width: 250px;
+    text-align: center;
+    padding: 5px 5px;
+    
+    font-size: 90%;
+}
+
+
+.headquote a{
+  color: #ffffff;
+    padding: 10px;
+    padding-top: 30px;
+        
+    
+}
+
+#NewWaifus{
+ background-color: rgba(255,255,255,0.3);
+    position: absolute;
+    margin-top: 360px;
+    height: 140px;
+    width: 100%;
+    
+}
+
+
+#NewWaifusMain{
+    z-index: -111;
+    width: 850px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#NewWaifusMain nav ul li{
+    width: 106px;
+    display: inline;
+    float: left;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    border-color: rgba(25,25,25,0.0);
+    border-right-color: rgba(25,25,25,0.4);
+    border-style: solid;
+    border-width: 1px;
+    text-align: center;
+    align-content: center;
+    padding: 11px 10px;
+    color: rgba(25,25,25,0.8);
+    
+    -webkit-transition:0.2s;
+    -moz-transition:0.2s;
+    -o-transition:0.2s;
+    transition:0.2s;
+}
+#NewWaifusMain nav ul li:hover{
+    background-color: rgba(255,255,255,0.5);
+    color: rgba(25,25,25,0.8);
+}
+
+.News{
+  background-color: rgba(180,180,185, 0.6);
+    opacity: 1;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #bdc3c7;
+    height: auto;
+    margin-top: 80px;
+    margin-left: 10px;
+    width: 350px;
+    text-align: left;
+    position: static;
+    padding: 10px 10px;
+    color: #ffffff;
+}
+
+#LogInForm {
+    margin-top: 5px;
+    background-color: rgba(255,255,255,0.9) ;
+    
+    width: auto;
+    height: auto;
+    margin-right: 50px;
+    margin-bottom: 0px;
+    padding: 10px 10px;
+    color: #6b6b6b;
+    
+}
+#LogInForm a{
+    padding: 5px 5px;
+    margin-left: 5px;
+    margin-top: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+#LogedIn {
+    
+    background-color: rgba(191,197,200,0.0) ;
+    
+    width: 200px;
+    height: 40px;
+    padding: 5px 5px;
+    color: rgba(44, 62, 80,0.8);
+    margin: 10px 10px;
+    
+}
+
+/*-------------------------------------!!!!!!!!CONTAINERS!!!!!!!!------------------------------------*/
+
+
+
+
+#globalcontainer{
+    position: relative;
+    width: 100%;
+    margin-top: 0px;
+    height: 2000px;
+    padding: 0px 0px;
+    background-color: #ffffff;
+    z-index: 1;
+}
+
+#MainContainer{
+    
+    position: relative;
+    width: 800px;
+    height: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: rgba(255,255,255, 1);
+}
+
+
+
+
+#MainLeftColumn {
+    position: relative;
+    float: left;
+    background-color: rgba(251,251,253,0.5);
+    width: 200px;
+    border-color: rgba(44, 62, 80,0.0);
+    border-width: 1px;
+    border-style: solid;
+    border-right-color: rgba(44, 62, 80,0.4);
+    
+    border-left-color: rgba(44, 62, 80,0.00);
+    
+}
+
+#MainCenterColumn {
+    position: relative;
+    background-color: rgba(254,254,254,1);
+    width: 800px;
+    height: auto;
+    
+    
+}
+
+#MainRightColumn {
+    position: relative;
+    float: right;
+    background-color: rgba(250,250,250,1);
+    width: 580px;
+    
+}
+
+#IndexMenu {
+    position: relative;
+    width: 200px;
+    height: auto;
+    padding: 0px 0px;
+    min-width: 900px;
+    margin-top: 44px;
+}
+#IndexMenu nav ul li{
+    font-size: 80%;
+    
+    border-color: rgba(142,141,139,0);
+    border-width: 1px;
+    border-style: solid;
+    border-top-color: rgba(142,141,139,1);
+    width: 189px;
+    display: table;
+    text-align: right;
+    padding: 10px 5px;
+    
+}
+
+#IndexMenu nav ul li:hover{
+    font-size: 81%;
+    background-color: rgba(243,193,58,0.9);
+    color: white;
+}
+
+#IndexMenu nav ul li:hover > #IndexMenu nav ul li a:hover{
+    font-size: 81%;
+    color: white;
+}
+
+#IndexMenu nav ul li a{
+    color: rgba(122,121,119,1);
+    padding-right: 10px;
+}
+
+
+/*-----------------!!!!!!!!!! WAIFUPAGE !!!!!!!!!!!!!----------------------*/
+
+#WaifuLeftColumn {
+    float: left;
+    background-color: rgba(154,154,154,0.1);
+    width: 250px;
+    height: 100%;
+    
+    
+}
+
+#WaifuRightColumn {
+    float: Right;
+    background-color: rgba(184,184,154,0.1);
+    width: 535px;
+    height: 100%;
+    
+    
+}
+
+
+
+#WaifuHead {
+    position: relative;
+    background-color: rgba(244,244,244, 1);
+    width: 100%;
+    height: auto;
+    color: rgba(44,44,44, 0.8);
+    padding: 20px 20px;
+    
+}
+
+.Tag{
+    -webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+border-radius: 10px;
+    -webkit-transition:0.2s;
+    -moz-transition:0.2s;
+    -o-transition:0.2s;
+    transition:0.2s;
+    background-color: rgba(52, 152, 219, 0.4);
+    color: white;
+    border-color: rgba(41, 128, 185, 1);
+    border-style: solid;
+    border-width: 1px;
+    padding: 2px 5px;
+    margin-left: 10px;
+    
+}
+
+.Tag:hover{
+   background-color: rgba(52, 152, 219, 0.9);
+}
+
+
+.WaifuActionlist {
+    padding: 5px 5px;
+    display: inline;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    
+    
+}
+.WaifuActionlist ul li{
+    padding: 5px 9px;
+    display: inline;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 90%;
+    -moz-transition:0.2s;
+    -o-transition:0.2s;
+    transition:0.2s;
+}
+
+
+.WCircleIcon:hover {
+   color: rgba(255, 255, 229, 1);
+    
+    -moz-transition:0.1s;
+    -o-transition:0.1s;
+    transition:0.1s;
+}
+.WHeartIcon:hover {
+   color: rgba(250, 130, 170, 1);
+    
+    -moz-transition:0.1s;
+    -o-transition:0.1s;
+    transition:0.1s;
+}
+.WNoIcon:hover {
+   color: rgba(200, 100, 100, 1);
+    
+    -moz-transition:0.1s;
+    -o-transition:0.1s;
+    transition:0.1s;
+}
+.WNoPleaseIcon:hover {
+   color: rgba(150, 10, 20, 1);
+    
+    -moz-transition:0.1s;
+    -o-transition:0.1s;
+    transition:0.1s;
+}
+
+
+
+
+
+#myChart{
+ z-index: 1234567;   
+    
+}
+
+
+/* ----------------------------------------------!!!!!!!!!!! MY PAGE        !!!!!!!!!!!!!-------------*/
+
+
+
+#myLeftColumn{
+    
+    position: relative;
+    height: 100%;
+    margin-top: 0px;
+    width: 240px;
+    margin-left: 10px;
+    background-color: rgba(155,155,155,0.05); 
+    text-align: center;
+    color: #758fa3;
+    padding: 10px 3px;
+    float: left;
+    
+}
+
+.MyPageActionlist ul li{
+    padding: 5px 9px;
+    display: inline;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.MyPageIcon{
+    opacity: 0.7;
+    
+    -moz-transition:0.2s;
+    -o-transition:0.2s;
+    transition:0.2s;
+    font-size: 70%;
+}
+
+.MyPageIcon:hover{
+    opacity: 1;
+}
+
+#InfoZone{
+    padding: 5px 5px;
+    border-color: rgba(155,155,155,0.35);
+    border-style: solid;
+    border-width: 1px;
+    border-left-color: rgba(155,155,155,0);
+    border-right-color: rgba(155,155,155,0);
+    text-align: left;
+    opacity: 1;
+}
+
+#myRightColumn{
+    
+    position: relative;
+    height: 100%;
+    margin-top: 0px;
+    width: 500px;
+    margin-right: 10px;
+    background-color: rgba(120,120,155,0.05); 
+    
+    color: #758fa3;
+    padding: 10px 10px;
+    float: right;
+}
+
+#myBlock{
+    padding: 22px 22px;
+    border-color: rgba(44, 62, 80,0.35);
+    border-style: solid;
+    border-width: 1px;
+    border-left-color: rgba(115,115,155,0);
+    border-right-color: rgba(115,115,155,0);
+    text-align: left;
+    opacity: 1;
+    
+}
+
+
+
+.basicDivider{
+    border: rgba(44, 62, 80,0.6);;
+  width: 90%;
+    color: rgba(44, 62, 80,0.6);
+background-color: rgba(44, 62, 80,0.6);;
+height: 1px;
+    margin:30px 30px;
+}
+
+
+/* ----------------------------------------------!!!!!!!!!!! DASHBOARD      !!!!!!!!!!!!!-------------*/
+
+#Dashboard{
+    
+    background-color: rgba(255,254,251,1);
+    text-align: left;
+    opacity: 1;
+    height: 100%;
+    width: 580px;
+}
+
+
+.AddPostButton{
+    
+ background-color: transparent;
+    color: rgba(44, 62, 80,0.8);
+    
+    -moz-transition:0.2s;
+    -o-transition:0.2s;
+    transition:0.2s;
+    font-size: 70%;
+}
+
+.AddPostButton:hover{
+    color: rgba(44, 62, 80,0.6);
+    text-shadow: 0 0 10px rgba(243,193,58,0.8);
+}
+.AddPostButton:active{
+    color: rgba(44, 62, 80,0.6);;
+    text-shadow: 0 0 10px rgba(243,193,58,0.8);
+}
+
+#PostForm{
+ background-color: rgba(255,255,255,0.9);
+    color: rgba(35,55,95,0.6);
+    border-style: solid;
+    border-color: rgba(35,55,95,0.6);
+    border-radius: 5px;
+    border-width: 1px;
+    margin: 10px 20px;
+    -moz-transition:0.2s;
+    -o-transition:0.2s;
+    transition:0.2s;
+    
+}
+
+#DropZone{
+    
+    
+ background-color: rgba(255,255,255,1);
+    border-style: solid;
+    border-color: rgba(35,55,95,0.6);
+    border-radius: 5px;
+    border-width: 1px;
+    margin: 10px 10px;
+}
+
+#SimplePost{
+    background-size: cover;
+    background-position: center;
+    width: 145px;
+    padding: 0px 0px;
+    height: 145px;
+    margin: 0px 0px;
+    position: static;
+    -webkit-transition:0.2s;
+    -moz-transition:0.2s;
+    -o-transition:0.2s;
+    transition:0.2s;
+    /**/
+    color: rgba(255,255,255,1);
+    float: left;
+}
+
+#SimplePost:hover {
+    -webkit-filter: brightness(1.05);
+     
+}
+
+
+#SimplePost:hover > .PostActionlist ul li a{ 
+    
+    color: rgba(255,255,255,1); 
+    
+    text-shadow: 0 0 15px rgba(55,55,55,0.9);
+}
+
+#SimplePost .PostActionlist {
+    position: absolute;
+    z-index: 100000;
+    margin-left: 15px;
+    margin-top: 110px;
+    color: rgba(255,255,255,1);
+    
+}
+#SimplePost .PostActionlist ul li{
+    margin:10px 10px;
+    font-size:70%;
+    display: inline;
+}
+#SimplePost .PostActionlist ul li a{
+    color: rgba(255,255,255,0); 
+    text-shadow: 0 0 0px rgba(1,1,1,0.0);
+    -webkit-transition:0.2s;
+    -moz-transition:0.2s;
+    -o-transition:0.2s;
+    transition:0.2s;
+}
+
+
+
+/* ----------------------------------------------!!!!!!!!!!! WAIFU CELLS        !!!!!!!!!!!!!-------------*/
+
+
+#WaifusCells{
+}
+#WaifusCells div{
+    margin: 10px 10px;
+    float: left;
+    width: 125px;
+   border-width: 1px;
+    border-color: rgba(44, 62, 80,0.1);
+    border-style: solid;
+    color: rgba(44, 62, 80,0.8);
+    align-items: center;
+    text-align: center;
+}
+#WaifusCells div p h1{
+    
+    text-align: center;
+    padding: 5px 5px;
+
+}
+
+.WaifusCells{
+}
+.WaifusCells div{
+    margin: 10px 10px;
+    float: left;
+    width: 125px;
+   border-width: 1px;
+    border-color: rgba(44, 62, 80,0.1);
+    border-style: solid;
+    color: rgba(44, 62, 80,0.8);
+    align-items: center;
+    text-align: center;
+}
+.WaifusCells div p h1{
+    
+    text-align: center;
+    padding: 5px 5px;
+
+}
+
+
+/* ----------------------------------------------!!!!!!!!!!! Register Form         !!!!!!!!!!!!!-------------*/
+
+#RegisterForm {
+    background-color: rgba(222,222,222,0.8);
+        margin-left: auto;
+    margin-bottom: 111px;
+    margin-right: auto;
+    width: 670px;
+    height: auto;
+    padding: 20px 90px;
+    z-index: 22;
+}
+
+.hd{
+    font-size: x-large;
+    text-align: center;
+
+}
+#regSection{
+    background-color: rgba(112,112,112,0.9);
+    padding: 10px 10px;
+}
+#regSection a{
+    color: #ffffff;   
+}
+
+#RegisterForm nav ul li{
+    display: inline;
+    float: left;
+    
+}
+#RegisterForm header.icon1{
+    background-color: rgba(112,112,112,0.9);
+    padding: 2px 2px;
+    margin: 5px 5px;
+}
+
+#RegisterForm header.iconcolor1{
+    background-color: #e74c3c;
+    padding: 5px 10px;
+    margin: 5px 5px;
+}
+#RegisterForm header.iconcolor2{
+    background-color: #34495e;
+    padding: 5px 10px;
+    margin: 5px 5px;
+}
+#RegisterForm header.iconcolor3{
+    background-color: #2ecc71;
+    padding: 5px 10px;
+    margin: 5px 5px;
+}
+#RegisterForm header.iconcolor4{
+    background-color: #1abc9c;
+    padding: 5px 10px;
+    margin: 5px 5px;
+}
+#RegisterForm header.iconcolor5{
+    background-color: #9b59b6;
+    padding: 5px 10px;
+    margin: 5px 5px;
+}
+#RegisterForm header.iconcolor6{
+    background-color: #f1c40f;
+    padding: 5px 10px;
+    margin: 5px 5px;
+}
+
+/* ----------------------------------------------!!!!!!!!!!! ADD WAIFU        !!!!!!!!!!!!!-------------*/
+#AddPrIm{
+    
+    margin: 10px 10px;
+    width: auto;
+    height: 250px;
+}
+
+
+#Footer{
+    position: relative;
+    width:100%;
+    height: 20px;
+    background-color: rgba(44, 62, 80,1);;
+    color: rgba(255,255,255,0.5);
+    text-align: center;
+    padding: 40px 0px;
+    z-index: 2;
+    
+}
+
+
